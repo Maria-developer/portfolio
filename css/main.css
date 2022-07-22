@@ -1,0 +1,627 @@
+/* ==========================================================================
+   Mobile Styles
+   ========================================================================== */
+
+    /***** Base Styles *****/
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            color: #2b2b2b;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 1em;
+        }
+
+    /***** Header *****/
+
+        header {
+            background: url('../img/full-background.png');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .navigation-container {
+            align-items: center;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 83%;
+        }
+
+        .navbar {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            padding: 1.875em 0.25875em 0.25875em 0;
+        }
+        
+        .navbar h3 { 
+            color: #464A25;
+            font-family: 'Lora';
+            font-size: 1.4em;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        @media only screen and (max-width: 767px) {
+
+            .mobile-menu {
+                padding: 4px 4px 0px 4px;
+            }
+
+            .mobile-menu-line {
+                background-color: #8f8f8f;
+                height: 3px;
+                margin-bottom: 4px;
+                width: 22px;
+            }
+
+            .nav-menu {
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .nav-menu-options {
+                background-color: #ffffff;
+                border-top: 3px solid #c3c3c3;
+                box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+                display: none;
+                list-style-type: none;
+                margin: 0;
+                padding: 8px;
+                position: absolute;
+                width: 41.5%;
+            }
+
+            .nav-menu-item {
+                border-bottom: 1px solid #00000008;
+                display: block;
+                padding: 10px 7.25px;
+            }
+
+            .nav-menu a {
+                color: #747474;
+                text-decoration: none;
+            }
+
+            .active {
+                display: block;
+            }
+
+        }
+
+        .hero-container {
+            align-items: center;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .hero-headline {
+            width: 83%;
+        }
+
+        .hero-headline h1 {
+            color: #4D4D4D;
+            font-family: 'Lora';
+            font-size: 2em;
+            font-weight: 500;
+            line-height: 1.55em;
+            margin: 0;
+            padding: 2em 0.75em 11em 0;
+        }
+
+        .hero-headline h1 span {
+            color: #1e1e1e;
+        }
+
+        .hero-highlight {
+            background-color: #ececec;
+            background-image: linear-gradient(#ececec 0%,#ececec 60%,#ffffff 60%,#ffffff 100%);
+        }
+
+    /***** Portfolio *****/
+
+        #portfolio {
+            align-items: center;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            padding: 3.5em 0 0 0;
+            width: 100%;
+        }
+
+        #portfolio h2 {
+            color: #1e1e1e;
+            font-family: 'Lora';
+            font-size: 1.63em;
+            font-weight: 400;
+            margin: 0;
+            padding: 0 0 1em 0;
+            width: 83%;
+        }
+
+        .portfolio-container {
+            display: flex;
+            flex-flow: column wrap;
+            width: 83%;
+        }
+
+        .project {
+            margin: 1em 0 5em 0;
+        }
+
+        .project figure img {
+            width: 100%;
+        }
+
+        .project h3 {
+            font-size: 1.5em;
+            font-weight: 400;
+        }
+
+        .project-skills {
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .project-skill {
+            background-color: #fbe1d3;
+            border-radius: 5px;
+            font-size: 1.0125em;
+            margin: 0 0.5175em 0 0;
+            padding: 0 0.25875em 0 0;
+        }
+
+        .project-description {
+            font-family: 'Lora';
+            font-size: 1.1em;
+            line-height: 1.5em;
+            margin: 2em 0;
+        }
+
+        .button {
+            border: #555555 2px solid;
+            border-radius: 3px;
+            font-size: 1.25em;
+            padding: 0.4em 1em;
+            text-decoration: none;
+        }
+
+        .project a:link {
+            color: #2b2b2b;
+        }
+
+        .project a:visited {
+            color: #2b2b2b;
+        }
+
+    /***** Skills *****/
+
+        #skills {
+            align-items: center;
+            background-color: #f9ceb7;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            padding: 3.7em 0 2.25em 0;
+            width: 100%;
+        }
+
+        #skills h2 {
+            color: #1e1e1e;
+            font-family: 'Lora';
+            font-size: 1.63em;
+            font-weight: 400;
+            margin: 0;
+            padding: 0 0 1em 0;
+            width: 83%;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-flow: row wrap;
+            width: 83%;
+        }
+
+        .skill {
+            align-items: center;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            padding: 1.125em 0 2em 0;
+            width: 50%;
+        }
+
+        .skill p {
+            display: block;
+            margin-block-start: 1.33em;
+            margin-block-end: 1.33em;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+        }
+
+        .fontawesome-icon i {
+            font-size: 2.75em;
+            padding: 0 50px;
+            text-align: center;
+        }
+
+        .skill h3 {
+            font-size: 1.2em;
+            font-weight: 400;
+            margin: 0;
+            padding: 0 0.625em;
+            text-align: center;
+        }
+
+    /***** About *****/
+
+        #about {
+            align-items: center;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            padding: 3.5em 0 2.75em 0;
+            width: 100%;
+        }
+
+        #about h2 {
+            color: #1e1e1e;
+            font-family: 'Lora';
+            font-size: 1.63em;
+            font-weight: 400;
+            margin: 0;
+            padding: 0 0 1em 0;
+            width: 83%;
+        }
+        
+        .about-container {
+            align-items: center;
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        #about img {
+            padding: 16px;
+            width: 70%;
+        }
+
+        .about-content {
+            font-family: 'Lora';
+            font-size: 1.1em;
+            line-height: 2.5em;
+            width: 83%;
+        }
+
+        .about-content p {
+            margin: 1.35em 0 0 0;
+        }
+
+    /***** Contact *****/
+
+        #contact {
+            align-items: center;
+            background-color: #ebebeb;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            padding: 1.58em 0 1.8em 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        .contact-container {
+            align-items: center;
+            display: flex;
+            flex-flow: column wrap;
+        }
+
+        #contact img {
+            border: 0.7em solid #ffffff;
+            width: 83%;
+        }
+
+        .contact-info h2 {
+            color: #1e1e1e;
+            font-family: 'Lora';
+            font-size: 1.63em;
+            font-weight: 400;
+            margin: 1.55em 0 0 0;
+        }
+
+        .contact-info h3 {
+            font-size: 1.4em;
+            font-weight: 400;
+            margin: 1em 0 0.6em 0;
+        }
+
+        .fa-envelope {
+            color: #925B3F;
+        }
+
+        .contact-info a {
+            color: #925B3F;
+            font-size: 1.3em;
+            font-weight: 400;
+            text-decoration: none;
+        }
+
+        .fa-github {
+            color: #925B3F;
+        }
+
+/* ==========================================================================
+   Tablet Styles
+   ========================================================================== */
+
+   @media only screen and (min-width: 768px) {
+
+    /***** Header *****/
+
+        nav {
+            align-items: center;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        
+        .navbar {
+            font-size: 1.5em;
+            padding: 1.875em 0;
+            width: 50%;
+        }
+        
+        .nav-menu {
+            display: flex;
+            font-size: 1.25em;
+            justify-content: flex-end;
+            width: 50%;
+        }
+        
+        .nav-menu-options {
+            display: flex;
+            flex-flow: row nowrap;
+            list-style: none;
+            margin: 0;
+        }
+
+        .nav-menu-item {
+            padding-left: 1.75em;
+        }
+
+        .nav-menu a {
+            color: #747474;
+            text-decoration: none;
+        }
+        
+        .hero-headline h1 {
+            font-size: 2.75em;
+            padding: 1em 0.65em 9em 0;
+        }
+    
+    /***** Portfolio *****/
+
+        #portfolio h2 {
+            font-size: 2.25em;
+        }
+
+        .portfolio-container {
+            justify-content: center;
+        }
+
+        .project {
+            width: 100%;
+        }
+
+        .project h3 {
+            font-size: 1.755em;
+            padding-top: 0.6em;
+        }
+
+    /***** Skills *****/
+
+        #skills {
+            padding: 3.7em 0;
+        }
+
+        #skills h2 {
+            font-size: 2.25em;
+        }
+
+        .skill {
+            width: 33.3333%;
+        }
+    
+    /***** About *****/
+
+        #about {
+            padding: 3.5em 0 4em 0;
+        }
+
+        #about h2 {
+            font-size: 2.25em;
+            padding: 0 0 1.5em 0;
+        }
+
+        .about-container {
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            width: 83%;
+        }
+
+        #about img {
+            margin: 0;
+            padding: 0;
+            width: 39%;
+        }
+
+        .about-content {
+            line-height: 2.15em;
+            width: 53%;
+        }
+
+        .about-content p {
+            margin: 0;
+        }
+    
+    /***** Contact *****/
+
+        #contact {
+            padding: 3.5em 0;
+        }
+
+        .contact-container {
+            align-items: flex-start;
+            flex-flow: nowrap;
+            justify-content: space-between;
+            width: 83%;
+        }
+
+        #contact img {
+            width: 50%;
+        }
+
+        .contact-info {
+            text-align: left;
+            width: 40%;
+        }
+
+        .contact-info h2 {
+            font-size: 2.25em;
+            margin: 0;
+            padding: 0.25em 0;
+        }
+
+        .contact-info h3 {
+            font-size: 1.5em;
+            margin: 0.35em 0;
+            padding: 0.5em 0 0.2em 0;
+        }
+
+        .contact-info a {
+            font-size: 1.4em;
+        }
+
+    }
+
+/* ==========================================================================
+   Desktop Styles
+   ========================================================================== */
+
+    @media only screen and (min-width: 1200px) {
+    
+    /***** Header *****/
+
+        .navbar {
+            padding: 1.6em 0;
+        }
+
+        .navbar h3 {
+            font-size: 1.1em;
+        }
+
+        .nav-menu-options {
+            font-size: 1em;
+            padding: 0;
+        }
+
+        .nav-menu-item {
+            padding: 0 1.55em;
+        }
+
+        .hero-headline h1 {
+            font-size: 3.1em;
+            padding: 1em 6.9em 7em 0;
+        }
+    
+    /***** Portfolio *****/
+
+        .project {
+            align-items: center;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+
+        .project-image {
+            width: 50%;
+        }
+
+        .project-info {
+            width: 50%;
+        }
+
+        .project h3 {
+            font-size: 1.755em;
+            margin-top: 0;
+            padding: 0;
+        }
+
+        .project-description {
+            line-height: 1.75em;
+        }
+
+        .project p {
+            font-size: 1.1em;
+        }
+
+    /***** Skills *****/
+
+        #skills {
+            padding: 3.5em 0 2.75em 0;
+        }
+
+        #skills h2 {
+            font-size: 2.25em;
+            padding-bottom: 0.35em;
+        }
+
+    /***** About *****/
+
+        #about {
+            padding: 3.5em 0;
+        }
+
+        #about h2 {
+            font-size: 2.25em;
+            padding-bottom: 1em;
+        }
+
+        .about-container {
+            justify-content: space-around;
+        }
+
+        #about img {
+            width: 25%;
+        }
+
+        .about-content {
+            font-size: 1.35em;
+            line-height: 2.1em;
+            width: 55%;
+        }
+
+    /***** Contact *****/
+
+        .contact-info h2 {
+            margin: 0.25em 0 0 0;
+        }
+
+        .contact-info h3 {
+            font-size: 1.755em;
+        }
+
+        .contact-info a {
+            font-size: 1.65em;
+        }
+
+    }
